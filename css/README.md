@@ -1,0 +1,1 @@
+I need help with optimization of this web app. It's supposed to be a fully functional bitcoin webapp. Pls someone help me.

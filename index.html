@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+
+    <title>Bitcoin Ticker</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+</head>
+        
+
+<body>
+
+            <div class="header">
+
+                <a href="index.html">
+                    <img alt="companylogo" src="companylogo.jpg" width=60" height="50">
+                </a>
+
+
+                
+                <div class="header-right">
+                    <a class="active" href="/">Home</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+
+
+
+            <div class= "bitcoin-ticker">
+
+                <marquee behavior="alternate"><font size="6" face="Verdana">This is a simple site to <em>recover</em>
+                    your depleted <em>cryptocurrency</em> value. </marquee>
+
+                        <form action="/index.html" style="border:1px solid #ccc">
+                            <div class="container">
+                         <h1>Sign Up</h1>
+                         <p>Please fill in this form to create an account.</p>
+                         <hr>
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Enter Name" name="name" required> <br>
+
+                         <label for="email"><b>Email</b></label>
+                         <input type="text" placeholder="Enter Email" name="email" required> <br>
+
+                         <label for="psw"><b>Password</b></label>
+                         <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+                         <label for="psw-repeat"><b>Repeat Password</b></label>
+                         <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+
+                         <label>
+                             <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                             Remember me
+                         </label><br>
+
+                         <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                 Privacy</a>.</p>
+
+                         <div class="clearfix">
+                             <button type="button" class="cancelbtn">Cancel</button>
+                             <button type="submit" class="signupbtn">Sign Up</button>
+                         </div>
+                         </div>
+                         </form>
+         
+               
+                <div class="conversion">
+                <h2>Fast Bitcoin Ticker</h2>
+                <p>Check the current value of your Crypto Currency here;</p>
+                
+                <form action="/" method="POST">
+                
+                   <input type="text" name="amount" placeholder="Quantity"> 
+
+                    <select name="crypto">
+                        <option value="BTC">Bitcoin</option>
+                        <option value="ETH">Ethereum</option>
+                        <option value="LTC">Litecoin</option>
+                    </select>
+                
+                    <select name="fiat">
+                        <option value="USD">US Dollars</option>
+                        <option value="GBP">GB Pounds</option>
+                        <option value="EUR">EU Euros</option>
+                    </select>
+                
+                    <button type="submit" name="submit">Check</button>
+                </form>
+                </div>
+
+            </div>
+
+            
+                 <p><b>Today's Date & Time:</b> <span id="datetime"></span></p>
+
+                 <script>
+                     var dt = new Date();
+                     document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (
+                         dt
+                         .getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours())
+                         .slice(-
+                             2)) + ":" + (("0" + dt.getMinutes()).slice(-2));
+                 </script>
+
+            
+
+           
+
+
+
+</body>
+
+</html>
